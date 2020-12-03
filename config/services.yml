@@ -1,0 +1,19 @@
+
+services:
+    Terminal42\CashctrlApi\ApiClient:
+        arguments:
+            - '@psr18.http_client'
+            - '@psr18.http_client'
+            - '@psr18.http_client'
+            - '%terminal42_cashctrl.subdomain%'
+            - '%terminal42_cashctrl.api_key%'
+
+    Terminal42\CashctrlApi\ApiClientInterface: '@Terminal42\CashctrlApi\ApiClient'
+
+    Terminal42\CashctrlApi\Api\PersonCategoryEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\PersonEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
