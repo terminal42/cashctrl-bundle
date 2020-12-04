@@ -10,10 +10,114 @@ services:
 
     Terminal42\CashctrlApi\ApiClientInterface: '@Terminal42\CashctrlApi\ApiClient'
 
+    Terminal42\CashctrlApi\Api\AccountEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\CurrencyEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\CustomfieldEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\CustomfieldGroupEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\FiscalperiodEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\InventoryAssetCategoryEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\InventoryAssetEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\InventoryServiceCategoryEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\InventoryServiceEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\InventoryStockCategoryEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\InventoryStockEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\InventoryUnitEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\JournalEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\JournalImportEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\JournalImportEntryEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\LocationEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\OrderBookentryEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\OrderCategoryEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\OrderDocumentEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\OrderEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\OrderTemplateEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
     Terminal42\CashctrlApi\Api\PersonCategoryEndpoint:
         arguments:
             - '@Terminal42\CashctrlApi\ApiClientInterface'
 
     Terminal42\CashctrlApi\Api\PersonEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\PersonTitleEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\RoundingEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\SequencenumberEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\TaxEndpoint:
+        arguments:
+            - '@Terminal42\CashctrlApi\ApiClientInterface'
+
+    Terminal42\CashctrlApi\Api\TextEndpoint:
         arguments:
             - '@Terminal42\CashctrlApi\ApiClientInterface'
