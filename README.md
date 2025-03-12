@@ -1,17 +1,13 @@
 # terminal42/cashctrl-bundle
 
 A Symfony bundle for [our cashctrl.com API client](https://github.com/terminal42/cashctrl-api).
-This bundle is currently used for our own projects and is not stable at all.
-It thus might be subject to heavy changes.
-If you're interested in moving to a stable release (version 1.0.0) so you can be
-sure there are no BC breaks until version 2.0.0 (semver), please feel free to
-get in touch with us.
+This bundle is currently used for our own projects subject to heavy changes.
 
 
 ## Installation
 
 ```bash
-$ composer.phar require terminal42/cashctrl-bundle ^1.0
+$ composer.phar require terminal42/cashctrl-bundle ^2.0@dev
 ```
 
 
@@ -25,3 +21,9 @@ terminal42_cashctrl:
     api_key:        ""   # Mandatory; Your API key
 ```
 
+Instead of configuring the bundle, you can also set env keys, e.g. in your `.env.local` file.
+
+```dotenv
+CASHCTRL_SUBDOMAIN=   # Your Cashctrl subdomain
+CASHCTRL_APIKEY=      # Your API key
+```
