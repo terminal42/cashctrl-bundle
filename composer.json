@@ -20,12 +20,16 @@
         }
     ],
     "require": {
-        "terminal42/cashctrl-api": "^1.0@dev",
-        "symfony/http-kernel": "^4.0 || ^5.0 || ^6.0",
-        "symfony/dependency-injection": "^4.0 || ^5.0 || ^6.0",
-        "symfony/config": "^4.0 || ^5.0 || ^6.0",
-        "symfony/http-client": "^4.0 || ^5.0 || ^6.0",
+        "php": "^8.2",
+        "terminal42/cashctrl-api": "^2.0@dev",
+        "symfony/http-kernel": "^5.0 || ^6.0 || ^7.0",
+        "symfony/dependency-injection": "^5.0 || ^6.0 || ^7.0",
+        "symfony/config": "^5.0 || ^6.0 || ^7.0",
+        "symfony/http-client": "^5.0 || ^6.0 || ^7.0",
         "nyholm/psr7": "^1.0"
+    },
+    "require-dev": {
+        "terminal42/contao-build-tools": "dev-main"
     },
     "autoload": {
         "psr-4": {
@@ -36,6 +40,11 @@
         "branch-alias": {
             "dev-main": "2.0.x-dev",
             "dev-php7": "1.0.x-dev"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "terminal42/contao-build-tools": true
         }
     }
 }
